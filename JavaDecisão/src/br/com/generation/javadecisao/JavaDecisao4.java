@@ -16,11 +16,12 @@ public class JavaDecisao4 {
 		numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro: "));
 		
 		if(numero % 2 == 0){
-			JOptionPane.showMessageDialog(null, "O número "+numero+" é par. Seu quadrado é: "+Math.sqrt(numero));
+			JOptionPane.showMessageDialog(null, "O número "+numero+" é par. Sua raiz é: "+Math.sqrt(numero));
 		}
 		else{
-			JOptionPane.showMessageDialog(null, "O número "+numero+" é ímpar.");
+			JOptionPane.showMessageDialog(null, "O número "+numero+" é ímpar. Seu quadrado é: "+Math.pow(numero, 2));
 		}
+		
 		
 
 	}
