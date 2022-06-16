@@ -1,5 +1,7 @@
 package br.com.generation.exercicioheranca;
 
+import java.util.Scanner;
+
 public class TesteAnimal {
 
 	public static void main(String[] args) {
@@ -8,7 +10,11 @@ public class TesteAnimal {
 		Animal cavalo = new Animal();
 		Animal preguica = new Animal();
 		
-		cachorro.setNome("Tobias");
+		Scanner sc = new Scanner(System.in);
+		
+		String nomeDoDog = sc.next();
+		
+		cachorro.setNome(nomeDoDog);
 		cachorro.setIdade(6);
 		cachorro.setSubirArvore(false);
 		
